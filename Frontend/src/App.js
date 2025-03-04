@@ -1,6 +1,6 @@
 import React from 'react';
 import AppointmentForm from './Appointment/Appointment';
-import AppointmentList from '../src/AppointmentList';
+import AppointmentList from './AppointmentList/AppointmentList';
 
 function App() {
   return (
