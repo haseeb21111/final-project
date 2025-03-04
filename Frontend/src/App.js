@@ -1,5 +1,5 @@
 import React from 'react';
-import AppointmentForm from '../src/Appointment';
+import AppointmentForm from './Appointment/Appointment';
 import AppointmentList from '../src/AppointmentList';
 
 function App() {
