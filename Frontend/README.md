@@ -28,10 +28,18 @@ Step 3: Frontend Setup
 
 Step 4: Final Testing and Debugging
 
-    Date Completed: 5 MAR 2025
+    Date Completed: 4 MAR 2025
     Tasks Done:
         Conducted thorough testing across different modules.
         Made final adjustments to CSS for better UI/UX.
+
+Step 5: Appointment Style
+
+    Date Completed: 5 MAR 2025
+    Tasks Done:
+        Made and applied styles to the Appointment Form in React to make it look better.
+        Improved the design of inputs, textarea, and buttons to make them easier to use.
+        Made sure the form looks good on different devices with responsive design.       
 
 How to Run Locally
 Prerequisites
