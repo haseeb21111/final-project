@@ -1,3 +1,65 @@
+This README outlines the development steps taken to create an appointment system using the MERN stack (MongoDB, Express, React, Node.js), with MySQL as the database. The purpose of this document is to show the sequential steps and progress of the project.
+Development Progress
+Step 1: Initial Setup
+
+    Date Completed: 1 MAR 2025
+    Tasks Done:
+        Set up the initial GitHub repository.
+        Created local directories for front-end and back-end code.
+        Initialized npm and installed necessary packages like Express, MySQL, React, and Axios.
+
+Step 2: Backend Setup
+
+    Date Completed: 2 MAR 2025
+    Tasks Done:
+        Developed the basic server using Node.js and Express.
+        Configured MySQL database connection.
+        Created the appointments table in the database.
+        Implemented REST API endpoints for creating and retrieving appointments.
+
+Step 3: Frontend Setup
+
+    Date Completed: 3 MAR 2025
+    Tasks Done:
+        Set up the React application structure.
+        Created AppointmentForm component to handle the form submissions.
+        Used Axios for sending HTTP requests to the backend.
+
+
+Step 4: Final Testing and Debugging
+
+    Date Completed: 5 MAR 2025
+    Tasks Done:
+        Conducted thorough testing across different modules.
+        Made final adjustments to CSS for better UI/UX.
+
+How to Run Locally
+Prerequisites
+
+    Node.js
+    MySQL Server
+
+Running the Application
+
+Clone the repository:
+git clone https://github.com/yourusername/appointment-system.git
+cd appointment-system
+
+Backend setup:
+
+cd backend
+npm install
+node server.js
+
+Frontend setup:
+
+cd ../frontend
+npm install
+npm start
+
+Open your web browser and navigate to http://localhost:3000 to view the application.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
