@@ -16,4 +16,12 @@ div {
     flex-direction: column;
     gap: 15px;
   }
-  
+  input[type="text"],
+input[type="date"],
+input[type="time"],
+textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
