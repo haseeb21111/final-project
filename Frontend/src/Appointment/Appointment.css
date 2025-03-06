@@ -45,3 +45,6 @@ textarea {
   input, textarea, button {
     width: 100%;  /* Ensures that the form elements take full width */
   }
+  ::placeholder {
+    color: #888;
+  }
