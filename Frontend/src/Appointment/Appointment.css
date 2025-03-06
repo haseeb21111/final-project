@@ -42,3 +42,6 @@ textarea {
   button:hover {
     background-color: #0056b3;
   }
+  input, textarea, button {
+    width: 100%;  /* Ensures that the form elements take full width */
+  }
