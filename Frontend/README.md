@@ -39,7 +39,36 @@ Step 5: Appointment Style
     Tasks Done:
         Made and applied styles to the Appointment Form in React to make it look better.
         Improved the design of inputs, textarea, and buttons to make them easier to use.
-        Made sure the form looks good on different devices with responsive design.       
+        Made sure the form looks good on different devices with responsive design. 
+
+
+Step 6: Setting Up MySQL and Database
+
+    Date Completed: 8 MAR 2025
+    Tasks Done:
+        Installed MySQL on the system.
+        Verified MySQL installation:
+        Used MySQL Command Line Client.
+        Created the appointments database using SQL
+
+
+Step 7: Creating the Database Table
+
+    Date Completed: 9 MAR 2025
+    Tasks Done:
+        Created a table to store appointment data
+        Ensured that the table structure allows data storage in a structured format.
+        Tested table creation and verified its existence in MySQL.
+
+Step 8: Connecting MySQL to Node.js and Implementing CRUD Operations
+    Date Completed: 10 MAR 2025
+    Tasks Done:
+        Installed MySQL Node.js Client
+        Established a connection between MySQL and the backend
+        Tested connection with a sample query
+        Implemented CREATE and READ operations in the appointment list:
+            Created API routes to insert and retrieve appointments.
+            Verified the ability to store and fetch data using Postman.
 
 How to Run Locally
 Prerequisites
