@@ -3,6 +3,7 @@ import AppointmentForm from './Appointment/Appointment';
 import AppointmentList from './AppointmentList/AppointmentList';
 
 function App() {
+  const [refreshList, setRefreshList] = useState(false);
   return (
     <div className="App">
       <h1>Appointment System</h1>
