@@ -20,9 +20,12 @@ const AppointmentList = () => {
     <div>
       <h2>Appointments</h2>
       <ul>
+        {appointments.length === 0 ? <p>No appointments found.</p> : null}
         {appointments.map((appointment) => (
           <li key={appointment.id}>
-            <strong>{appointment.name}</strong> - {appointment.date} {appointment.time}
+            <strong>{appointment.name}</strong> - 
+            <span> {new Date(appointment.date).toLocaleDateString()} </span> 
+            <span> {appointment.time} </span>
             <p>{appointment.description}</p>
           </li>
         ))}
