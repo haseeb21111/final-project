@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import AppointmentForm from './Appointment/Appointment';
 import AppointmentList from './AppointmentList/AppointmentList';
 
@@ -8,11 +8,12 @@ function App() {
   const refreshAppointments = () => {
     setRefreshList(!refreshList); // Triggers a re-fetch of data
   };
+
   return (
     <div className="App">
       <h1>Appointment System</h1>
-      <AppointmentForm />
-      <AppointmentList />
+      <AppointmentForm onAppointmentAdded={refreshAppointments} />
+      <AppointmentList key={refreshList} />
     </div>
   );
 }
