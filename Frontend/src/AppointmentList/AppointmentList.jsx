@@ -6,9 +6,11 @@ const AppointmentList = () => {
   const [appointments, setAppointments] = useState([]);
 
   useEffect(() => {
-    axios
-      .get('http://localhost:5000/api/appointments')
-      .then((response) => setAppointments(response.data))
+    axios.get('http://localhost:5000/api/appointments')
+      .then((response) => {
+        console.log('Fetched Appointments:', response.data);
+        setAppointments(response.data);
+      })
       .catch((error) => {
         console.error('Error fetching appointments!', error);
       });
