@@ -22,6 +22,7 @@ const AppointmentForm = ({ onAppointmentAdded }) => {
         setDate('');
         setTime('');
         setDescription('');
+        onAppointmentAdded();
       })
       .catch((error) => {
         console.error('There was an error creating the appointment!', error);
