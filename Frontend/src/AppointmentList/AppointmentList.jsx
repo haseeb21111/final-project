@@ -20,6 +20,8 @@ const AppointmentList = () => {
 
   useEffect(() => fetchAppointments(), []);
 
+  const handleUpdate = (id) => {}
+
   return (
     <div>
       <h2>Appointments</h2>
