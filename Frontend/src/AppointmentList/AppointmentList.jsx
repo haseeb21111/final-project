@@ -4,6 +4,7 @@ import './AppointmentList.css';
 
 const AppointmentList = () => {
   const [appointments, setAppointments] = useState([]);
+  const [editingId, setEditingId] = useState(null);
 
   useEffect(() => {
     axios.get('http://localhost:5000/api/appointments')
