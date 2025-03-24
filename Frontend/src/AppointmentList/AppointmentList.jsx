@@ -32,6 +32,7 @@ const AppointmentList = () => {
 
   const handleEdit = (appointment) => {
     setEditingId(appointment.id);
+    setEditData({})
   }
 
   return (
