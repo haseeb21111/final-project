@@ -60,4 +60,5 @@ app.listen(port, () => {
 app.put('/api/appointments/:id', (req, res) => {
   const { id } = req.params;
   const { name, date, time, description } = req.body;
+  const sql = 'UPDATE appointments SET name=?, date=?, time=?, description=? WHERE id=?';
 });
