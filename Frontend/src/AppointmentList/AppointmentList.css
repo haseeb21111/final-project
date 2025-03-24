@@ -1,4 +1,9 @@
 .appointment-list {
     max-width: 800px;
-    
+    margin: 20px auto;
+    padding: 20px;
+  }
+  .appointment-list ul {
+    list-style: none;
+    padding: 0;
   }
