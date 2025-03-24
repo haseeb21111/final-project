@@ -57,13 +57,18 @@ app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
 
+
 app.put('/api/appointments/:id', (req, res) => {
   const { id } = req.params;
   const { name, date, time, description } = req.body;
+  
   const sql = 'UPDATE appointments SET name=?, date=?, time=?, description=? WHERE id=?';
+  
   db.query(sql, [name, date, time, description, id], (err, result) => {
     if (err) {
       console.error(err);
       return res.status(500).send('Error updating appointment');
-    }});
+    }
+    res.json({ message: 'Appointment updated successfully!' });
+  });
 });
