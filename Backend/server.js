@@ -57,4 +57,7 @@ app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
 
-app.put('/api/appointments/:id', (req, res) => {});
+app.put('/api/appointments/:id', (req, res) => {
+  const { id } = req.params;
+  const { name, date, time, description } = req.body;
+});
