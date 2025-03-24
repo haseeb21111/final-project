@@ -56,3 +56,5 @@ app.post('/api/appointments', (req, res) => {
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
+
+app.put('/api/appointments/:id', (req, res) => {});
