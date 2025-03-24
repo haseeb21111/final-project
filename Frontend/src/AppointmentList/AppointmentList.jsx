@@ -32,7 +32,12 @@ const AppointmentList = () => {
 
   const handleEdit = (appointment) => {
     setEditingId(appointment.id);
-    setEditData({})
+    setEditData({
+      name: appointment.name,
+      date: appointment.date.split('T')[0], // تاریخ کو صحیح فارمیٹ میں لے
+      time: appointment.time,
+      description: appointment.description
+    })
   }
 
   return (
