@@ -37,8 +37,8 @@ const AppointmentList = () => {
       date: appointment.date.split('T')[0], // تاریخ کو صحیح فارمیٹ میں لے
       time: appointment.time,
       description: appointment.description
-    })
-  }
+    });
+  };
 
   return (
     <div>
