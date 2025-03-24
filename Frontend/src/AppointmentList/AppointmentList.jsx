@@ -18,6 +18,8 @@ const AppointmentList = () => {
       .catch((err) => console.error('Error fetching appointments!', err));
   };
 
+  useEffect(() => fetchAppointments(), []);
+
   return (
     <div>
       <h2>Appointments</h2>
