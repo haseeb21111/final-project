@@ -12,16 +12,7 @@ const AppointmentList = () => {
     description: ''
   });
 
-  useEffect(() => {
-    axios.get('http://localhost:5000/api/appointments')
-      .then((response) => {
-        console.log('Fetched Appointments:', response.data);
-        setAppointments(response.data);
-      })
-      .catch((error) => {
-        console.error('Error fetching appointments!', error);
-      });
-  }, []);
+  
 
   return (
     <div>
