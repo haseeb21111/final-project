@@ -12,7 +12,7 @@ const AppointmentList = () => {
     description: ''
   });
 
-  
+  const fetchAppointments = () => {};
 
   return (
     <div>
