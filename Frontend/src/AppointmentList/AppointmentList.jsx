@@ -39,6 +39,7 @@ const AppointmentList = () => {
       description: appointment.description
     });
   };
+  const handleEditChange = (e) => {}
 
   return (
     <div>
