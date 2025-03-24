@@ -39,7 +39,10 @@ const AppointmentList = () => {
       description: appointment.description
     });
   };
-  const handleEditChange = (e) => {}
+  const handleEditChange = (e) => {
+    const { name, value } = e.target;
+    setEditData(prev => ({ ...prev, [name]: value }));
+  };
 
   return (
     <div>
