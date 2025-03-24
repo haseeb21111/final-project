@@ -20,7 +20,15 @@ const AppointmentList = () => {
 
   useEffect(() => fetchAppointments(), []);
 
-  const handleUpdate = (id) => {}
+  const handleUpdate = (id) => {
+    axios.put(`http://localhost:5000/api/appointments/${id}`, editData)
+      .then(() => {
+        alert('Appointment updated!');
+        setEditingId(null);
+        fetchAppointments(); // نئی لسٹ لے کر آئے
+      })
+      .catch((err) => console.error('Error updating!', err));
+  };
 
   return (
     <div>
