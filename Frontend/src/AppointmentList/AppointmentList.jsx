@@ -30,6 +30,8 @@ const AppointmentList = () => {
       .catch((err) => console.error('Error updating!', err));
   };
 
+  const handleEdit = (appointment) => {}
+  
   return (
     <div>
       <h2>Appointments</h2>
