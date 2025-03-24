@@ -19,3 +19,8 @@
     flex-direction: column;
     gap: 10px;
   }
+  .appointment-list button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    
+  }
