@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import "./Appointment.css"
 
-const AppointmentForm = () => {
+const AppointmentForm = ({ onAppointmentAdded }) => {
   const [name, setName] = useState('');
   const [date, setDate] = useState('');
   const [time, setTime] = useState('');
