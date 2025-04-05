@@ -33,4 +33,5 @@
   }
   .appointment-list .delete-btn {
     background-color: #f44336;
+    margin-left: 10px;
   }
