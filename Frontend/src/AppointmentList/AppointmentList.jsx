@@ -38,6 +38,8 @@ const AppointmentList = () => {
       alert("Appointment deleted successfully!");
       fetchAppointments();
     })
+  .catch((err) => console.error("Error deleting appointment!", err));
+}
   }
  
   const handleEdit = (appointment) => {
