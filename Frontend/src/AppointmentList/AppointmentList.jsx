@@ -108,7 +108,7 @@ const AppointmentList = () => {
   <button className="edit" onClick={() => handleEdit(appointment)}>Edit</button>
   <button 
     onClick={() => handleDelete(appointment.id)} 
-    style={{ background: "#f44336",}}
+    className="delete-btn"
   >
     Delete
   </button>
