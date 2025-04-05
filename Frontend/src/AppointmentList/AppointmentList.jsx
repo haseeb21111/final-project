@@ -101,18 +101,18 @@ const AppointmentList = () => {
                 </div>
               ) : (
                 <>
-                  <strong>{appointment.name}</strong> - 
-                  <span> {new Date(appointment.date).toLocaleDateString()} </span>
-                  <span> {appointment.time} </span>
-                  <p>{appointment.description}</p>
-                  <button onClick={() => handleEdit(appointment)}>
-                    Edit
-                  </button>
-                  <button
-                  onClick={() => handleDelete(appointment.id)} 
-                  style={{ background: "#f44336", marginLeft: "10px" }}
-                  >Delete</button>
-                </>
+  <strong>{appointment.name}</strong> - 
+  <span> {new Date(appointment.date).toLocaleDateString()} </span>
+  <span> {appointment.time} </span>
+  <p>{appointment.description}</p>
+  <button onClick={() => handleEdit(appointment)}>Edit</button>
+  <button 
+    onClick={() => handleDelete(appointment.id)} 
+    style={{ background: "#f44336", marginLeft: "10px" }}
+  >
+    Delete
+  </button>
+</>
               )}
             </li>
           ))}
