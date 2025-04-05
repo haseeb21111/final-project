@@ -31,3 +31,4 @@
   .appointment-list button:hover {
     background-color: #45a049;
   }
+  .appointment-list .delete-btn {}
