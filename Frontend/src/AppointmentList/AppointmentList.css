@@ -6,6 +6,7 @@
   .appointment-list ul {
     list-style: none;
     padding: 0;
+    position: relative;
   }
   .appointment-list li {
     background: #f9f9f9;
@@ -38,3 +39,4 @@
   .appointment-list .delete-btn:hover {
     background-color: #d32f2f;
   }
+  

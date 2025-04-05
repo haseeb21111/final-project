@@ -103,7 +103,8 @@ const AppointmentList = () => {
                 <>
   <strong>{appointment.name}</strong> - 
   <span> {new Date(appointment.date).toLocaleDateString()} </span>
-  <span> {appointment.time} </span>
+  <span style={{marginLeft: "20px",}}>|</span>
+  <span style={{marginLeft: "20px",}}> {appointment.time} </span>
   <p>{appointment.description}</p>
   <button className="edit" onClick={() => handleEdit(appointment)}>Edit</button>
   <button 
