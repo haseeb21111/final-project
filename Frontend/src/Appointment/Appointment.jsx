@@ -50,7 +50,7 @@ const AppointmentForm = ({ onAppointmentAdded }) => {
           onChange={(e) => setTime(e.target.value)}
         />
         <textarea
-          placeholder="Description"
+          placeholder="Doctor Name"
           value={description}
           onChange={(e) => setDescription(e.target.value)}
         />
