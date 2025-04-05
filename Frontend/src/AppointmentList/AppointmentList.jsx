@@ -32,6 +32,7 @@ const AppointmentList = () => {
       .catch((err) => console.error('Error updating!', err));
   };
   const handleDelete = (id) => {
+    if (window.confirm("Are you sure you want to delete this appointment?"))
     axios.delete(`http://localhost:5000/api/appointments/${id}`)
   }
  
