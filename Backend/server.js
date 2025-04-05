@@ -75,6 +75,7 @@ app.put('/api/appointments/:id', (req, res) => {
   app.delete('/api/appointments/:id', (req, res) => {
     const { id } = req.params;
     const sql = 'DELETE FROM appointments WHERE id = ?';
+    db.query(sql, [id], (err, result) => )
   });
 
 });
