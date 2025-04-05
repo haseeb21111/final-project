@@ -12,7 +12,7 @@ const AppointmentList = () => {
     description: ''
   });
 
-  // ڈیٹا لینے کا فنکشن
+  
   const fetchAppointments = () => {
     axios.get('http://localhost:5000/api/appointments')
       .then((res) => setAppointments(res.data))
@@ -21,23 +21,23 @@ const AppointmentList = () => {
 
   useEffect(() => fetchAppointments(), []);
 
-  // اپ ڈیٹ کے لیے فنکشن
+  
   const handleUpdate = (id) => {
     axios.put(`http://localhost:5000/api/appointments/${id}`, editData)
       .then(() => {
         alert('Appointment updated!');
         setEditingId(null);
-        fetchAppointments(); // نئی لسٹ لے کر آئے
+        fetchAppointments(); 
       })
       .catch((err) => console.error('Error updating!', err));
   };
-
-  // ایڈٹ موڈ میں جانے کا فنکشن
+  const handleDelete = (id) => {}
+ 
   const handleEdit = (appointment) => {
     setEditingId(appointment.id);
     setEditData({
       name: appointment.name,
-      date: appointment.date.split('T')[0], // تاریخ کو صحیح فارمیٹ میں لے
+      date: appointment.date.split('T')[0], 
       time: appointment.time,
       description: appointment.description
     });
