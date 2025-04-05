@@ -75,12 +75,12 @@ app.put('/api/appointments/:id', (req, res) => {
   app.delete('/api/appointments/:id', (req, res) => {
     const { id } = req.params;
     const sql = 'DELETE FROM appointments WHERE id = ?';
+    
     db.query(sql, [id], (err, result) => {
       if (err) {
         console.error(err);
         return res.status(500).send('Error deleting appointment');
       }
       res.json({ message: 'Appointment deleted successfully!' });
+    });
   });
-
-});
