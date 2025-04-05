@@ -19,7 +19,7 @@
     flex-direction: column;
     gap: 10px;
   }
-  .appointment-list button {
+  .appointment-list .edit {
     margin-top: 10px;
     padding: 5px 10px;
     background-color: #4CAF50;
@@ -28,7 +28,7 @@
     border-radius: 3px;
     cursor: pointer;
   }
-  .appointment-list button:hover {
+  .appointment-list .edit:hover {
     background-color: #45a049;
   }
   .appointment-list .delete-btn {
