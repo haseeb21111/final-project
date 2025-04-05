@@ -109,7 +109,9 @@ const AppointmentList = () => {
                     Edit
                   </button>
                   <button
-                  onClick={() => handleDelete(appointment.id)} >Delete</button>
+                  onClick={() => handleDelete(appointment.id)} 
+                  style={{ background: "#f44336", marginLeft: "10px" }}
+                  >Delete</button>
                 </>
               )}
             </li>
