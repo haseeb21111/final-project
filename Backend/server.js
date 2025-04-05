@@ -71,4 +71,7 @@ app.put('/api/appointments/:id', (req, res) => {
     }
     res.json({ message: 'Appointment updated successfully!' });
   });
+
+  app.delete('/api/appointments/:id', (req, res) => {});
+
 });
