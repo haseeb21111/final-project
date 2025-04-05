@@ -31,7 +31,9 @@ const AppointmentList = () => {
       })
       .catch((err) => console.error('Error updating!', err));
   };
-  const handleDelete = (id) => {}
+  const handleDelete = (id) => {
+    axios.delete(`http://localhost:5000/api/appointments/${id}`)
+  }
  
   const handleEdit = (appointment) => {
     setEditingId(appointment.id);
