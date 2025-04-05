@@ -108,7 +108,8 @@ const AppointmentList = () => {
                   <button onClick={() => handleEdit(appointment)}>
                     Edit
                   </button>
-                  <button>Delete</button>
+                  <button
+                  onClick={() => handleDelete(appointment.id)} >Delete</button>
                 </>
               )}
             </li>
