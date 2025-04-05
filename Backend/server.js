@@ -84,3 +84,5 @@ app.put('/api/appointments/:id', (req, res) => {
       res.json({ message: 'Appointment deleted successfully!' });
     });
   });
+
+});
